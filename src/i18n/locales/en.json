@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "title": "Hello, I'm ",
+    "subtitle": "Application under construction...",
+    "contact": "Contact me"
+  },
+    "footer": {
+    "developpedBy": "Site developed by ",
+    "contact": "Contact me at ",
+    "visit": "or visit my "
+  }
+}
