@@ -1,10 +1,12 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 #root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: 'Clash Display', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif; */
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -55,6 +57,8 @@
 }
 
 :root {
+  --font-heading: 'Clash Display', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -90,13 +94,15 @@
 }
 
 .dark {
+  --font-heading: 'Clash Display', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --background: oklch(18.637% 0.00801 95.501);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-   --primary: oklch(49.628% 0.2785 284.6);
+  --primary: oklch(49.628% 0.2785 284.6);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.7 0.15 287);
   --secondary-foreground: oklch(0.985 0 0);
@@ -123,9 +129,21 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+  body, p, span, li, a, div {
+    font-family: var(--font-body);
   }
   body {
     @apply bg-background text-foreground;
