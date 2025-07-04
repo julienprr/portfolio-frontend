@@ -5,7 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 #root {
-  /* font-family: 'Clash Display', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 
   line-height: 1.5;
   font-weight: 400;
@@ -102,7 +105,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(49.628% 0.2785 284.6);
+  --primary: hsl(246, 87%, 66%);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.7 0.15 287);
   --secondary-foreground: oklch(0.985 0 0);
@@ -129,15 +132,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer utilities {
-  .font-heading {
-    font-family: var(--font-heading);
-  }
-  .font-body {
-    font-family: var(--font-body);
-  }
-}
-
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
@@ -147,5 +141,20 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-xl sm:text-2xl lg:text-4xl text-primary mb-4;
   }
 }

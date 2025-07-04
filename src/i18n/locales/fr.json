@@ -8,5 +8,22 @@
     "developpedBy": "Site développé par ",
     "contact": "Contactez moi:  ",
     "visit": "ou visitez mon "
+  },
+  "projects": {
+    "buttons": {
+      "contact": "Me contacter",
+      "viewProject": "Voir le projet"
+    },
+    "titles": {
+      "about": "À propos",
+      "technologies": "Technologies utilisées",
+      "keyConcepts": "Concepts clés",
+      "links": "Liens"
+    },
+    "play-manager": {
+      "subtitle": "Visualisez et gérez votre profil Spotify et vos playlists.",
+      "p1": "Cette application vous permet de visualiser et d’explorer des informations sur vos titres et artistes favoris sur différentes périodes, le tout via une interface claire et intuitive.",
+      "p2": "Elle propose également des fonctionnalités avancées de gestion des playlists, comme le mélange des playlists, le tri des titres par date de sortie, et la possibilité d’activer un tri automatique grâce à des tâches planifiées (cron) pour garder vos playlists toujours organisées."
+    }
   }
 }

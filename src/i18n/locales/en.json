@@ -4,9 +4,26 @@
     "subtitle": "Welcome on my Portofolio",
     "contact": "Contact me"
   },
-    "footer": {
-    "developpedBy": "Site developed by ",
+  "footer": {
+    "developpedBy": "Website developed by ",
     "contact": "Contact me at ",
     "visit": "or visit my "
+  },
+  "projects": {
+    "buttons": {
+      "contact": "Contact me",
+      "viewProject": "View Project"
+    },
+    "titles": {
+      "about": "About",
+      "technologies": "Technologies Used",
+      "keyConcepts": "Key Concepts",
+      "links": "Links"
+    },
+    "play-manager": {
+      "subtitle": "Visualize and manage your Spotify profile and playlists.",
+      "p1": "This application allows you to visualize and explore insights about your favorite tracks and artists acrossdifferent time ranges, all within a clear and intuitive interface.",
+      "p2": " It also provides advanced playlist management features, such as shuffling entire playlists, sorting tracks by release date, and enabling automatic sorting through scheduled cron jobs to keep your playlists organized effortlessly."
+    }
   }
 }

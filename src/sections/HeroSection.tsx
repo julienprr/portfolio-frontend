@@ -7,6 +7,7 @@ const HeroSection = () => {
 
   return (
     <section className="flex flex-col items-center justify-center py-12 text-center">
+
       {/* Titre principal */}
       <h1 className="sm:text-4xl lg:text-6xl text-2xl font-bold pb-4">
         {t('hero.title')}
