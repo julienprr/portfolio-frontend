@@ -24,6 +24,33 @@
       "subtitle": "Visualize and manage your Spotify profile and playlists.",
       "p1": "This application allows you to visualize and explore insights about your favorite tracks and artists acrossdifferent time ranges, all within a clear and intuitive interface.",
       "p2": " It also provides advanced playlist management features, such as shuffling entire playlists, sorting tracks by release date, and enabling automatic sorting through scheduled cron jobs to keep your playlists organized effortlessly."
+    },
+    "my-vps": {
+      "subtitle": "VPS managed by myself with Linux / K3S / Hostinger & More.",
+      "p1": {
+        "title": "Building a Kubernetes Infrastructure on a VPS",
+        "content": "As part of my personal projects and to strengthen my expertise in infrastructure and DevOps, I designed and deployed a full Kubernetes-based architecture on a VPS to host and automate the management of multiple web applications. The goal was to create a modern environment aligned with enterprise standards, while mastering tools for deployment, monitoring, and security."
+      },
+      "p2": {
+        "title": "Cluster Deployment and Management",
+        "content": "I used K3s to deploy a lightweight Kubernetes cluster on the VPS, structured into multiple namespaces for dev, prod, and logging. Helm charts and Makefiles automate deployments and updates."
+      },
+      "p3": {
+        "title": "Security and Traffic Routing",
+        "content": "An Nginx Ingress Controller routes HTTPS traffic, secured by cert-manager with Let's Encrypt certificates for all applications."
+      },
+      "p4": {
+        "title": "Monitoring and Logs",
+        "content": "The ELK stack (Elasticsearch, Logstash, Kibana) provides centralized logging and monitoring. Filebeat collects and forwards logs to Elasticsearch."
+      },
+      "p5": {
+        "title": "Secret Management",
+        "content": "Sealed Secrets encrypt sensitive data for safe version control. The sealed secrets are applied automatically in the cluster."
+      },
+      "p6": {
+        "title": "Automation and DevOps Practices",
+        "content": "The infrastructure is fully versioned and managed with Infrastructure as Code practices, enabling quick deployment and scaling."
+      }
     }
   }
 }

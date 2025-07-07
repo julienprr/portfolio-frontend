@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation(); // ✅ rend le composant réactif
+  const { i18n } = useTranslation();
 
   return (
     <div className="flex items-center gap-2">

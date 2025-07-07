@@ -9,7 +9,11 @@ import '@/i18n';
 import '@/index.css';
 import Home from '@/pages/Home.tsx';
 import NotFound from '@/pages/NotFound.tsx';
+
+
+
 import SpotifyProfile from './pages/projects/SpotifyProfile';
+import MyVPS from './pages/projects/MyVps';
 
 
 
@@ -31,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: 'projects/spotify-profile',
         element: <SpotifyProfile />,
+      },
+      {
+        path: 'projects/my-vps',
+        element: <MyVPS />,
       },
       {
         path: '*',

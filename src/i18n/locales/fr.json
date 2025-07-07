@@ -20,10 +20,32 @@
       "keyConcepts": "Concepts clés",
       "links": "Liens"
     },
-    "play-manager": {
-      "subtitle": "Visualisez et gérez votre profil Spotify et vos playlists.",
-      "p1": "Cette application vous permet de visualiser et d’explorer des informations sur vos titres et artistes favoris sur différentes périodes, le tout via une interface claire et intuitive.",
-      "p2": "Elle propose également des fonctionnalités avancées de gestion des playlists, comme le mélange des playlists, le tri des titres par date de sortie, et la possibilité d’activer un tri automatique grâce à des tâches planifiées (cron) pour garder vos playlists toujours organisées."
+    "my-vps": {
+      "subtitle": "VPS administré par mes soins avec Linux / K3S / Hostinger et plus.",
+      "p1": {
+        "title": "Création d'une infrastructure Kubernetes sur un VPS",
+        "content": "Dans le cadre de mes projets personnels et pour renforcer mon expertise en infrastructure et DevOps, j’ai conçu et déployé une architecture complète basée sur Kubernetes sur un VPS afin d’héberger et d’automatiser la gestion de plusieurs applications web. L’objectif était de créer un environnement moderne aligné sur les standards des entreprises tout en maîtrisant les outils de déploiement, de supervision et de sécurité."
+      },
+      "p2": {
+        "title": "Déploiement et gestion du cluster",
+        "content": "J’ai utilisé K3s pour déployer un cluster Kubernetes léger sur le VPS, structuré en plusieurs namespaces pour le développement, la production et la journalisation. Les charts Helm et les Makefiles automatisent les déploiements et les mises à jour."
+      },
+      "p3": {
+        "title": "Sécurité et routage du trafic",
+        "content": "Un Ingress Controller Nginx redirige le trafic HTTPS, sécurisé par cert-manager avec des certificats Let’s Encrypt pour toutes les applications."
+      },
+      "p4": {
+        "title": "Supervision et journalisation",
+        "content": "La stack ELK (Elasticsearch, Logstash, Kibana) offre une journalisation et une supervision centralisées. Filebeat collecte et transmet les logs à Elasticsearch."
+      },
+      "p5": {
+        "title": "Gestion des secrets",
+        "content": "Sealed Secrets chiffre les données sensibles pour un contrôle de version sécurisé. Les secrets chiffrés sont appliqués automatiquement dans le cluster."
+      },
+      "p6": {
+        "title": "Automatisation et pratiques DevOps",
+        "content": "L’infrastructure est entièrement versionnée et gérée selon les pratiques Infrastructure as Code, permettant des déploiements et une montée en charge rapides."
+      }
     }
   }
 }
