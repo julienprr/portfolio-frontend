@@ -44,6 +44,6 @@ jobs:
           mkdir -p ~/.kube
           echo "${{ secrets.KUBE_CONFIG }}" | base64 -d > ~/.kube/config
           ENV=$( [ "${{ github.ref }}" == "refs/heads/main" ] && echo prod || echo dev )
-          kubectl -n $ENV rollout restart deployment/portfolio
+          kubectl -n $ENV set image deployment/portfolio portfolio=julienprr/portfolio:${{ github.sha }}
       - name: Check cluster context
         run: kubectl config current-context
