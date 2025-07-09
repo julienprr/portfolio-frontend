@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import SpotifyProfileImage from '@/assets/images/projects/spotify-profile.png';
+import SpotifyProfileImage from '@/assets/images/projects/spotify-profile/sc_playlist_details.png';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
 import { Badge } from '@/components/ui/badge';
@@ -13,7 +13,7 @@ const SpotifyProfile = () => {
       {/* Project Header */}
       <FadeInOnScroll className="mb-6">
         <h1 className="text-2xl sm:text-6xl font-heading mb-2 text-primary">Spotify Profile</h1>
-        <p className="text-muted-foreground text-lg">{t("projects.play-manager.subtitle")}</p>
+        <p className="text-muted-foreground text-lg">{t('projects.play-manager.subtitle')}</p>
       </FadeInOnScroll>
 
       {/* Project Image */}
@@ -23,7 +23,7 @@ const SpotifyProfile = () => {
 
       {/* Detailed Description */}
       <FadeInOnScroll className="text-left mb-4">
-        <h2 className="section-title">{t("projects.titles.about")}</h2>
+        <h2 className="section-title">{t('projects.titles.about')}</h2>
         <p>{t('projects.play-manager.p1')}</p>
       </FadeInOnScroll>
 
@@ -33,7 +33,7 @@ const SpotifyProfile = () => {
 
       {/* Technologies */}
       <FadeInOnScroll className="space-y-6 text-left mb-6 sm:mb-12">
-        <h2 className="section-title">{t("projects.titles.technologies")}</h2>
+        <h2 className="section-title">{t('projects.titles.technologies')}</h2>
         <div className="flex flex-wrap gap-2">
           <TechnoBadge name="NestJS" src="/icons/nestjs.svg" alt="NestJS" />
           <TechnoBadge name="React" src="/icons/react.svg" alt="React" />
@@ -47,10 +47,11 @@ const SpotifyProfile = () => {
       {/* Concepts */}
       <FadeInOnScroll className="space-y-6 text-left mb-6 sm:mb-12">
         <div>
-          <h2 className="section-title">{t("projects.titles.keyConcepts")}</h2>
+          <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
             <Badge variant={'outline'}>OAuth2</Badge>
             <Badge variant={'outline'}>API Integration</Badge>
+            <Badge variant={'outline'}>REST API</Badge>
             <Badge variant={'outline'}>Responsive Design</Badge>
             <Badge variant={'outline'}>Store & providers</Badge>
           </div>
@@ -59,7 +60,7 @@ const SpotifyProfile = () => {
       {/* Links */}
 
       <FadeInOnScroll className="space-y-6 text-left">
-        <h2 className="section-title">{t("projects.titles.links")}</h2>
+        <h2 className="section-title">{t('projects.titles.links')}</h2>
         <div className="flex flex-col gap-2 mt-6">
           <a
             href="https://github.com/julienprr/Spotify-Profile-Frontend"
@@ -73,7 +74,7 @@ const SpotifyProfile = () => {
             href="https://spotify-profile.julienprr.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-primary"
+            className="link"
           >
             Visit Live Site
           </a>

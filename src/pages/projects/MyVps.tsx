@@ -101,7 +101,7 @@ const MyVPS = () => {
             href="https://julienprr.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-primary"
+            className="link"
           >
             Visit Live Site
           </a>

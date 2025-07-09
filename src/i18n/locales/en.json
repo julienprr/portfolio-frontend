@@ -18,7 +18,8 @@
       "about": "About",
       "technologies": "Technologies Used",
       "keyConcepts": "Key Concepts",
-      "links": "Links"
+      "links": "Links",
+      "contributors": "Contributors"
     },
     "play-manager": {
       "subtitle": "Visualize and manage your Spotify profile and playlists.",
@@ -50,6 +51,29 @@
       "p6": {
         "title": "Automation and DevOps Practices",
         "content": "The infrastructure is fully versioned and managed with Infrastructure as Code practices, enabling quick deployment and scaling."
+      }
+    },
+    "compdoc": {
+      "subtitle": "An academic tool to compare jury reports and bibliographies for CAPES preparation.",
+      "p1": {
+        "title": "Project Context",
+        "content": "CompDoc was initiated by the DRUID research team at the University of Rennes within the CLARA project framework. It is designed to support students preparing for the biology CAPES exam by providing insights into recurring oral exam topics and relevant bibliographies. As part of this academic collaboration, our team self-organized and took the project from conception to deployment."
+      },
+      "p2": {
+        "title": "Analyzing Jury Reports and Bibliographies",
+        "content": "The tool enables students to compare jury reports and bibliographies from different years, highlighting key differences and trends. This feature helps candidates identify which topics to prioritize for their oral exams and which books they are allowed to consult during the test."
+      },
+      "p3": {
+        "title": "Advanced Data Processing and Visualization",
+        "content": "CompDoc integrates data analysis techniques such as cosine similarity and lemmatization to associate chapters with specific oral exam topics. It also provides visual representations of semantic relationships between key terms in the biology domain, helping users understand connections in the material more effectively."
+      },
+      "p4": {
+        "title": "Technical Stack and Deployment",
+        "content": "The backend was built with Python using FastAPI to deliver a robust REST API for document analysis. On the frontend, we used Preact with Material UI to design a fast, intuitive interface supporting advanced search and filtering features. The application was deployed using Docker Compose and served with Nginx for production readiness."
+      },
+      "p5": {
+        "title": "Collaboration and Workflow",
+        "content": "Throughout the project, we followed Agile methodologies with regular sprints and demos. Professors acted as Product Owners, guiding the development process. We also adopted Gitflow for efficient branch management, ensuring a smooth collaborative workflow."
       }
     }
   }

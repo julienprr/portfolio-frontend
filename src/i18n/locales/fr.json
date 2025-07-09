@@ -18,7 +18,8 @@
       "about": "À propos",
       "technologies": "Technologies utilisées",
       "keyConcepts": "Concepts clés",
-      "links": "Liens"
+      "links": "Liens",
+      "contributors": "Contributeurs"
     },
     "my-vps": {
       "subtitle": "VPS administré par mes soins avec Linux / K3S / Hostinger et plus.",
@@ -45,6 +46,29 @@
       "p6": {
         "title": "Automatisation et pratiques DevOps",
         "content": "L’infrastructure est entièrement versionnée et gérée selon les pratiques Infrastructure as Code, permettant des déploiements et une montée en charge rapides."
+      }
+    },
+    "compdoc": {
+      "subtitle": "Un outil académique pour comparer les rapports de jury et les bibliographies en préparation du CAPES.",
+      "p1": {
+        "title": "Contexte du projet",
+        "content": "CompDoc a été initié par l’équipe de recherche DRUID de l’Université de Rennes dans le cadre du projet CLARA. Il est conçu pour aider les étudiants préparant le CAPES de biologie en leur fournissant des informations sur les sujets récurrents aux épreuves orales et les bibliographies pertinentes. Dans le cadre de cette collaboration académique, notre équipe s’est auto-organisée et a mené le projet de la conception jusqu’au déploiement."
+      },
+      "p2": {
+        "title": "Analyse des rapports de jury et des bibliographies",
+        "content": "L’outil permet aux étudiants de comparer les rapports de jury et les bibliographies de différentes années, en mettant en évidence les principales différences et tendances. Cette fonctionnalité aide les candidats à identifier les sujets à prioriser pour leurs épreuves orales et les ouvrages qu’ils sont autorisés à consulter pendant celles-ci."
+      },
+      "p3": {
+        "title": "Traitement avancé des données et visualisation",
+        "content": "CompDoc intègre des techniques d’analyse de données telles que la similarité cosinus et la lemmatisation pour associer des chapitres à des sujets spécifiques des épreuves orales. Il offre également des représentations visuelles des relations sémantiques entre des termes clés dans le domaine de la biologie, permettant aux utilisateurs de mieux comprendre les connexions dans le contenu."
+      },
+      "p4": {
+        "title": "Stack technique et déploiement",
+        "content": "Le backend a été développé en Python avec FastAPI pour fournir une API REST robuste d’analyse de documents. Côté frontend, nous avons utilisé Preact et Material UI pour concevoir une interface rapide et intuitive prenant en charge des fonctionnalités de recherche et de filtrage avancées. L’application a été déployée avec Docker Compose et servie via Nginx pour la mise en production."
+      },
+      "p5": {
+        "title": "Collaboration et méthodes de travail",
+        "content": "Tout au long du projet, nous avons suivi des méthodologies agiles avec des sprints réguliers et des démonstrations. Les enseignants encadrants ont joué le rôle de Product Owners, orientant le processus de développement. Nous avons également adopté Gitflow pour une gestion efficace des branches, assurant un workflow collaboratif fluide."
       }
     }
   }

@@ -12,8 +12,9 @@ import NotFound from '@/pages/NotFound.tsx';
 
 
 
-import SpotifyProfile from './pages/projects/SpotifyProfile';
 import MyVPS from './pages/projects/MyVps';
+import SpotifyProfile from './pages/projects/SpotifyProfile';
+import Compdoc from './pages/projects/Compdoc';
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: 'projects/my-vps',
         element: <MyVPS />,
+      },
+      {
+        path: 'projects/compdoc',
+        element: <Compdoc />,
       },
       {
         path: '*',

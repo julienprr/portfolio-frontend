@@ -1,13 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 
-import SpotifyProfileImage from '@/assets/images/projects/spotify-profile.png';
+
+
+import CompdocHomepageImage from '@/assets/images/projects/compdoc/sc_homepage.png';
+import PlaylistDetailsImage from '@/assets/images/projects/spotify-profile/sc_playlist_details.png';
 import ProjectCard from '@/components/ProjectCard';
+
+
+
+
 
 const projects = [
   {
     title: 'Spotify Profile',
     description: 'An app to visualyze and manage your Spotify playlists easily.',
-    imageUrl: SpotifyProfileImage,
+    imageUrl: PlaylistDetailsImage,
     iconUrl: '/icons/spotify.svg',
     route: '/projects/spotify-profile',
   },
@@ -24,6 +31,13 @@ const projects = [
     imageUrl: '/icons/kubernetes.svg',
     iconUrl: '/icons/kubernetes.svg',
     route: '/projects/my-vps',
+  },
+  {
+    title: 'Compdoc',
+    description: 'VPS managed by myself with Linux / K3S / Hostinger & More',
+    imageUrl: CompdocHomepageImage,
+    iconUrl: '/icons/compdoc.svg',
+    route: '/projects/compdoc',
   },
 ];
 
