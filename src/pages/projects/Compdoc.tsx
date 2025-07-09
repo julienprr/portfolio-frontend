@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import CompdocHomepageImage from '@/assets/images/projects/compdoc/sc_homepage.png';
+import CompdocHomepageImage from '/images/projects/compdoc/sc_homepage.png';
 import ConceptBadge from '@/components/ConceptBadge';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';

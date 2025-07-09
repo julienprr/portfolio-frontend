@@ -77,6 +77,7 @@
       "viewProject": "View Project"
     },
     "titles": {
+      "myProjects": "My Projects",
       "about": "About",
       "technologies": "Technologies Used",
       "keyConcepts": "Key Concepts",
@@ -88,7 +89,7 @@
       "site": "View Live Site"
     },
     "spotify-profile": {
-      "subtitle": "Visualize and organize your Spotify playlists",
+      "subtitle": "Explore your listening habits and take control of your Spotify playlists ",
       "p1": {
         "title": "Explore Your Listening Habits",
         "content": "Spotify Profile offers a fresh way to dive into your music. You can explore your most played tracks and artists across different time ranges and rediscover songs you loved months or even years ago. The clean, intuitive interface makes it easy to navigate through your music data."
@@ -103,7 +104,7 @@
       }
     },
     "my-vps": {
-      "subtitle": "VPS managed by myself with Linux / K3S / Hostinger & More.",
+      "subtitle": "VPS managed by myself with Linux / k3s / Hostinger & more",
       "p1": {
         "title": "Building a Kubernetes Infrastructure on a VPS",
         "content": "As part of my personal projects and to strengthen my expertise in infrastructure and DevOps, I designed and deployed a full Kubernetes-based architecture on a VPS to host and automate the management of multiple web applications. The goal was to create a modern environment aligned with enterprise standards, while mastering tools for deployment, monitoring, and security."

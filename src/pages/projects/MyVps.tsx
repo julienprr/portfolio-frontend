@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import vpsCover from '@/assets/images/projects/vps-cover.png';
+import vpsCover from '/images/projects/vps-cover.png';
 import ConceptBadge from '@/components/ConceptBadge';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';

@@ -13,36 +13,35 @@ const ProjectCard = ({ title, description, imageUrl, iconUrl }: ProjectCardProps
 
   if (breakpoint === 'mobile') {
     return (
-      <Card className="flex flex-row items-center text-left p-2 hover:shadow-lg transition-shadow duration-300">
-        <img src={iconUrl} alt={title} className="w-12 h-12 rounded object-cover" />
+      <Card className="flex flex-row items-center p-2 text-left transition-shadow duration-300 hover:shadow-lg">
+        <img src={iconUrl} alt={title} className="h-12 w-12 rounded object-cover" />
         <div>
           <CardHeader className="p-0">
             <CardTitle className="font-heading">{title}</CardTitle>
           </CardHeader>
           <CardContent className="p-0">
-            <p className="text-muted-foreground text-sm">{description}</p>
+            <p className="text-sm text-muted-foreground">{description}</p>
           </CardContent>
         </div>
       </Card>
     );
   } else {
     return (
-      <Card className="overflow-hidden hover:shadow-lg transition-transform hover:border-primary duration-300">
+      <Card className="flex h-92 flex-col justify-between overflow-hidden pt-0 transition-transform duration-300 hover:border-primary">
         <div className="relative">
-          <img
-            src={imageUrl}
-            alt={title}
-            className="w-full h-48 object-cover"
-          />
+          <img src={imageUrl} alt={title} className="h-48 w-full object-cover" />
+          <div className="absolute inset-0 bg-primary opacity-75"></div>
         </div>
 
-        <CardHeader>
-          <CardTitle className="text-xl font-heading">{title}</CardTitle>
-        </CardHeader>
+        <div className="flex flex-1 flex-col justify-start px-4 text-center">
+          <CardHeader>
+            <CardTitle className="font-heading text-xl">{title}</CardTitle>
+          </CardHeader>
 
-        <CardContent>
-          <p className="text-muted-foreground">{description}</p>
-        </CardContent>
+          <CardContent>
+            <p className="text-muted-foreground">{description}</p>
+          </CardContent>
+        </div>
       </Card>
     );
   }

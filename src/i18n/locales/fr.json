@@ -77,6 +77,7 @@
       "viewProject": "Voir le projet"
     },
     "titles": {
+      "myProjects": "Mes Projets",
       "about": "À propos",
       "technologies": "Technologies utilisées",
       "keyConcepts": "Concepts clés",
@@ -88,7 +89,7 @@
       "site": "Visiter le site"
     },
     "spotify-profile": {
-      "subtitle": "Visualisez et organisez vos playlists Spotify",
+      "subtitle": "Explorez vos habitudes d’écoute et prenez le contrôle de vos playlists spotify ",
       "p1": {
         "title": "Explorez vos habitudes d’écoute",
         "content": "Spotify Profile offre une nouvelle façon d’explorer votre musique. Vous pouvez découvrir vos morceaux et artistes les plus écoutés sur différentes périodes et redécouvrir des titres que vous aimiez il y a des mois, voire des années. L’interface épurée et intuitive facilite la navigation dans vos données musicales."

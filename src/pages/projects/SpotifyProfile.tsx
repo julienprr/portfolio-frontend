@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import SpotifyProfileImage from '@/assets/images/projects/spotify-profile/sc_playlist_details.png';
+import SpotifyProfileImage from '/images/projects/spotify-profile/sc_playlist_details.png';
 import ConceptBadge from '@/components/ConceptBadge';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
