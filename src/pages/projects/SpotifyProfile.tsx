@@ -24,11 +24,21 @@ const SpotifyProfile = () => {
       {/* Detailed Description */}
       <FadeInOnScroll className="text-left mb-4">
         <h2 className="section-title">{t('projects.titles.about')}</h2>
-        <p>{t('projects.spotify-profile.p1')}</p>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-12">
-        <p>{t('projects.spotify-profile.p2')}</p>
+      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+        <h3 className="paragraph-title">{t('projects.spotify-profile.p1.title')}</h3>
+        <p>{t('projects.spotify-profile.p1.content')}</p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+        <h3 className="paragraph-title">{t('projects.spotify-profile.p2.title')}</h3>
+        <p>{t('projects.spotify-profile.p2.content')}</p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+        <h3 className="paragraph-title">{t('projects.spotify-profile.p3.title')}</h3>
+        <p>{t('projects.spotify-profile.p3.content')}</p>
       </FadeInOnScroll>
 
       {/* Technologies */}

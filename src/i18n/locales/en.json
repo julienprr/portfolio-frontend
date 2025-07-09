@@ -88,9 +88,19 @@
       "site": "View Live Site"
     },
     "spotify-profile": {
-      "subtitle": "Visualize and manage your Spotify profile and playlists.",
-      "p1": "This application allows you to visualize and explore insights about your favorite tracks and artists acrossdifferent time ranges, all within a clear and intuitive interface.",
-      "p2": " It also provides advanced playlist management features, such as shuffling entire playlists, sorting tracks by release date, and enabling automatic sorting through scheduled cron jobs to keep your playlists organized effortlessly."
+      "subtitle": "Visualize and organize your Spotify playlists",
+      "p1": {
+        "title": "Explore Your Listening Habits",
+        "content": "Spotify Profile offers a fresh way to dive into your music. You can explore your most played tracks and artists across different time ranges and rediscover songs you loved months or even years ago. The clean, intuitive interface makes it easy to navigate through your music data."
+      },
+      "p2": {
+        "title": "Take Control of Your Playlists",
+        "content": "Managing playlists has never been so simple. With Spotify Profile, you can shuffle entire playlists, sort tracks by their release date, and keep your library organized without effort. You can even activate automatic sorting, so your playlists stay up to date with minimal work on your part."
+      },
+      "p3": {
+        "title": "Stay Organized Automatically",
+        "content": "Once configured, Spotify Profile can handle the repetitive tasks for you. With scheduled updates and intelligent sorting, you can spend less time managing your playlists and more time enjoying your music."
+      }
     },
     "my-vps": {
       "subtitle": "VPS managed by myself with Linux / K3S / Hostinger & More.",

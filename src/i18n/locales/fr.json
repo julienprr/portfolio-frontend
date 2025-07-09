@@ -87,6 +87,21 @@
       "source": "Voir le code source sur Github",
       "site": "Visiter le site"
     },
+    "spotify-profile": {
+      "subtitle": "Visualisez et organisez vos playlists Spotify",
+      "p1": {
+        "title": "Explorez vos habitudes d’écoute",
+        "content": "Spotify Profile offre une nouvelle façon d’explorer votre musique. Vous pouvez découvrir vos morceaux et artistes les plus écoutés sur différentes périodes et redécouvrir des titres que vous aimiez il y a des mois, voire des années. L’interface épurée et intuitive facilite la navigation dans vos données musicales."
+      },
+      "p2": {
+        "title": "Prenez le contrôle de vos playlists",
+        "content": "Gérer vos playlists n’a jamais été aussi simple. Avec Spotify Profile, vous pouvez mélanger des playlists entières, trier les morceaux par date de sortie et garder votre bibliothèque organisée sans effort. Vous pouvez même activer le tri automatique pour que vos playlists restent à jour en permanence."
+      },
+      "p3": {
+        "title": "Restez organisé automatiquement",
+        "content": "Une fois configuré, Spotify Profile peut gérer les tâches répétitives pour vous. Grâce aux mises à jour programmées et au tri intelligent, vous passez moins de temps à organiser vos playlists et plus de temps à profiter de votre musique."
+      }
+    },
     "my-vps": {
       "subtitle": "VPS administré par mes soins avec Linux / K3S / Hostinger et plus.",
       "p1": {
