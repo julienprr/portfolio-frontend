@@ -7,9 +7,8 @@ const HeroSection = () => {
 
   return (
     <section className="flex flex-col items-center justify-center py-12 text-center">
-
       {/* Titre principal */}
-      <h1 className="sm:text-4xl lg:text-6xl text-2xl font-bold pb-4">
+      <h1 className="pb-4 text-2xl font-bold sm:text-4xl lg:text-6xl">
         {t('hero.title')}
         <motion.span
           initial={{ opacity: 0, scale: 0.8 }}
@@ -23,7 +22,6 @@ const HeroSection = () => {
 
       {/* Sous-titre */}
       <h2 className="mb-6 text-lg text-muted-foreground sm:text-xl">{t('hero.subtitle')}</h2>
-
     </section>
   );
 };

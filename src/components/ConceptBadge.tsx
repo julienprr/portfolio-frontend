@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
 
-import { Badge } from '@/components/ui/badge';
 import { ExternalLinkIcon } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
 
 interface ConceptBadgeProps {
   conceptKey: string;
@@ -15,8 +16,8 @@ const ConceptBadge = ({ conceptKey }: ConceptBadgeProps) => {
 
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`Learn more about ${name}`}>
-      <Badge variant="outline" className="cursor-pointer hover:text-accent transition-colors">
-        {name} <ExternalLinkIcon/>
+      <Badge variant="outline" className="cursor-pointer transition-colors hover:text-accent">
+        {name} <ExternalLinkIcon />
       </Badge>
     </a>
   );

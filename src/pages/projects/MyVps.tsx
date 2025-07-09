@@ -1,63 +1,64 @@
 import { useTranslation } from 'react-i18next';
 
-import vpsCover from '/images/projects/vps-cover.png';
 import ConceptBadge from '@/components/ConceptBadge';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
+
+import vpsCover from '/images/projects/vps-cover.png';
 
 const MyVPS = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-4xl mx-auto px-4 py-12">
+    <section className="mx-auto max-w-4xl px-4 py-12">
       {/* Project Header */}
       <FadeInOnScroll className="mb-6">
-        <h1 className="text-2xl sm:text-6xl font-heading mb-2 text-primary">My VPS</h1>
-        <p className="text-muted-foreground text-lg">{t('projects.my-vps.subtitle')}</p>
+        <h1 className="font-heading mb-2 text-2xl text-primary sm:text-6xl">My VPS</h1>
+        <p className="text-lg text-muted-foreground">{t('projects.my-vps.subtitle')}</p>
       </FadeInOnScroll>
 
       {/* Project Image */}
-      <FadeInOnScroll className="rounded-lg overflow-hidden shadow-lg mb-6 sm:mb-12 border border-primary">
-        <img src={vpsCover} alt="Spotify Profile Screenshot" className="w-full object-cover " />
+      <FadeInOnScroll className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
+        <img src={vpsCover} alt="Spotify Profile Screenshot" className="w-full object-cover" />
       </FadeInOnScroll>
 
       {/* Detailed Description */}
-      <FadeInOnScroll className="text-left mb-4">
+      <FadeInOnScroll className="mb-4 text-left">
         <h2 className="section-title">{t('projects.titles.about')}</h2>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p1.title')}</h3>
         <p>{t('projects.my-vps.p1.content')}</p>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p2.title')}</h3>
         <p>{t('projects.my-vps.p2.content')}</p>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p3.title')}</h3>
         <p>{t('projects.my-vps.p3.content')}</p>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p4.title')}</h3>
         <p>{t('projects.my-vps.p4.content')}</p>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p5.title')}</h3>
         <p>{t('projects.my-vps.p5.content')}</p>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-6">
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p6.title')}</h3>
         <p>{t('projects.my-vps.p6.content')}</p>
       </FadeInOnScroll>
 
       {/* Technologies */}
-      <FadeInOnScroll className="space-y-6 text-left mb-6 sm:mb-12">
+      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
         <h2 className="section-title">{t('projects.titles.technologies')}</h2>
         <div className="flex flex-wrap gap-2">
           <TechnoBadge name="Ubuntu" src="/icons/ubuntu.svg" alt="Ubuntu" />
@@ -70,7 +71,7 @@ const MyVPS = () => {
       </FadeInOnScroll>
 
       {/* Concepts */}
-      <FadeInOnScroll className="space-y-6 text-left mb-6 sm:mb-12">
+      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
         <div>
           <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
@@ -87,7 +88,7 @@ const MyVPS = () => {
 
       <FadeInOnScroll className="space-y-6 text-left">
         <h2 className="section-title">{t('projects.titles.links')}</h2>
-        <div className="flex flex-col gap-2 mt-6">
+        <div className="mt-6 flex flex-col gap-2">
           <a
             href="https://github.com/julienprr/vps-cluster-k3s"
             target="_blank"

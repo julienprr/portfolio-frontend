@@ -1,12 +1,13 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
-      const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <footer className="mt-16 w-full border-t border-muted py-6 text-center text-sm text-muted-foreground">
       <p>
-         {t('footer.developpedBy')} <span className="font-semibold text-foreground">julienprr</span>.  {t('footer.contact')}
+        {t('footer.developpedBy')} <span className="font-semibold text-foreground">julienprr</span>.{' '}
+        {t('footer.contact')}
         <a href="mailto:perrierjulien22@gmail.com" className="underline hover:text-foreground">
           perrierjulien22@gmail.com
         </a>{' '}

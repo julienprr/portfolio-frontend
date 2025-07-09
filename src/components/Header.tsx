@@ -15,7 +15,7 @@ export default function Header() {
     <header className="flex w-full items-center justify-between border-b border-white/10 px-6 py-4">
       <div className="flex items-center gap-2">
         {isDetailPage && (
-          <Button variant={'ghost'} onClick={() => navigate(-1)} className="flex 2xl:hidden items-center gap-2">
+          <Button variant={'ghost'} onClick={() => navigate(-1)} className="flex items-center gap-2 2xl:hidden">
             <ArrowLeft className="h-5 w-5 text-foreground" />
             <span className="sr-only">Back</span>
           </Button>

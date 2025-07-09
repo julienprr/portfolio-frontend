@@ -2,23 +2,15 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-
-
 import App from '@/App.tsx';
 import '@/i18n';
 import '@/index.css';
 import Home from '@/pages/Home.tsx';
 import NotFound from '@/pages/NotFound.tsx';
 
-
-
+import Compdoc from './pages/projects/Compdoc';
 import MyVPS from './pages/projects/MyVps';
 import SpotifyProfile from './pages/projects/SpotifyProfile';
-import Compdoc from './pages/projects/Compdoc';
-
-
-
-
 
 const router = createBrowserRouter([
   {

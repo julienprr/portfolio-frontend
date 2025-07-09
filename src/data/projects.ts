@@ -1,5 +1,5 @@
 export type Project = {
-  title: string,
+  title: string;
   key: string;
   route: string;
   imageUrl: string;
