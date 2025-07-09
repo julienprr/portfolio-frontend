@@ -76,7 +76,7 @@ const SpotifyProfile = () => {
             href="https://github.com/julienprr/Spotify-Profile-Frontend"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-primary"
+            className="link"
           >
             {t('projects.text.source')}
           </a>

@@ -92,7 +92,7 @@ const MyVPS = () => {
             href="https://github.com/julienprr/vps-cluster-k3s"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-primary"
+            className="link"
           >
             {t('projects.text.source')}
           </a>
