@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 
 import CompdocHomepageImage from '@/assets/images/projects/compdoc/sc_homepage.png';
+import ConceptBadge from '@/components/ConceptBadge';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
-import { Badge } from '@/components/ui/badge';
 
 const Compdoc = () => {
   const { t } = useTranslation();
@@ -69,11 +69,11 @@ const Compdoc = () => {
         <div>
           <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
-            <Badge variant={'outline'}>REST API</Badge>
-            <Badge variant={'outline'}>Cosine Similarity</Badge>
-            <Badge variant={'outline'}>NLP (Lemmatization)</Badge>
-            <Badge variant={'outline'}>Agile Workflow</Badge>
-            <Badge variant={'outline'}>Gitflow</Badge>
+            <ConceptBadge conceptKey="concepts.cosineSimilarity" />
+            <ConceptBadge conceptKey="concepts.lemmatization" />
+            <ConceptBadge conceptKey="concepts.restApi" />
+            <ConceptBadge conceptKey="concepts.agile" />
+            <ConceptBadge conceptKey="concepts.gitflow" />
           </div>
         </div>
       </FadeInOnScroll>
@@ -103,13 +103,8 @@ const Compdoc = () => {
       <FadeInOnScroll className="space-y-6 text-left">
         <h2 className="section-title">{t('projects.titles.links')}</h2>
         <div className="flex flex-col gap-2 mt-6">
-          <a
-            href="https://github.com/julienprr/compdoc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            View Source on GitHub
+          <a href="https://github.com/julienprr/compdoc" target="_blank" rel="noopener noreferrer" className="link">
+            {t('projects.text.source')}
           </a>
         </div>
       </FadeInOnScroll>

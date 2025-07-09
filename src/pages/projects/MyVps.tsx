@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 
 import vpsCover from '@/assets/images/projects/vps-cover.png';
+import ConceptBadge from '@/components/ConceptBadge';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
-import { Badge } from '@/components/ui/badge';
 
 const MyVPS = () => {
   const { t } = useTranslation();
@@ -74,13 +74,12 @@ const MyVPS = () => {
         <div>
           <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
-            <Badge variant={'outline'}>Containerisation</Badge>
-            <Badge variant={'outline'}>Orchestration</Badge>
-            <Badge variant={'outline'}>TLS Certificate Management</Badge>
-            <Badge variant={'outline'}>Sealed Secrets</Badge>
-            <Badge variant={'outline'}>Automation (Github Action)</Badge>
-            <Badge variant={'outline'}>Monitoring (ELK)</Badge>
-            <Badge variant={'outline'}>DNS configuration </Badge>
+            <ConceptBadge conceptKey="concepts.containerization" />
+            <ConceptBadge conceptKey="concepts.orchestration" />
+            <ConceptBadge conceptKey="concepts.tlsCertificateManagement" />
+            <ConceptBadge conceptKey="concepts.githubAutomation" />
+            <ConceptBadge conceptKey="concepts.elk" />
+            <ConceptBadge conceptKey="concepts.dnsConfiguration" />
           </div>
         </div>
       </FadeInOnScroll>
@@ -95,15 +94,10 @@ const MyVPS = () => {
             rel="noopener noreferrer"
             className="underline hover:text-primary"
           >
-            View Source on GitHub
+            {t('projects.text.source')}
           </a>
-          <a
-            href="https://julienprr.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            Visit Live Site
+          <a href="https://julienprr.com" target="_blank" rel="noopener noreferrer" className="link">
+            {t('projects.text.site')}
           </a>
         </div>
       </FadeInOnScroll>

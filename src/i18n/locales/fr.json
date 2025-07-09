@@ -9,6 +9,68 @@
     "contact": "Contactez moi:  ",
     "visit": "ou visitez mon "
   },
+  "concepts": {
+    "cosineSimilarity": {
+      "name": "Similarité cosinus",
+      "link": "https://fr.wikipedia.org/wiki/Similarit%C3%A9_cosinus"
+    },
+    "lemmatization": {
+      "name": "TAL (Lemmatisation)",
+      "link": "https://fr.wikipedia.org/wiki/Lemmatisation"
+    },
+    "restApi": {
+      "name": "API REST",
+      "link": "https://www.redhat.com/fr/topics/api/what-is-a-rest-api"
+    },
+    "agile": {
+      "name": "Méthodologie Agile",
+      "link": "https://fr.wikipedia.org/wiki/M%C3%A9thode_agile"
+    },
+    "gitflow": {
+      "name": "Gitflow",
+      "link": "https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow"
+    },
+    "containerization": {
+      "name": "Conteneurisation",
+      "link": "https://www.redhat.com/fr/topics/automation/what-is-orchestration"
+    },
+    "orchestration": {
+      "name": "Orchestration",
+      "link": "https://www.redhat.com/fr/topics/api/what-is-a-rest-api"
+    },
+    "tlsCertificateManagement": {
+      "name": "Gestion de certificats TLS",
+      "link": "https://aws.amazon.com/fr/what-is/ssl-certificate/"
+    },
+    "githubAutomation": {
+      "name": "Automation (Github Actions)",
+      "link": "https://github.com/features/actions"
+    },
+    "elk": {
+      "name": "Monitoring (ELK)",
+      "link": "https://www.elastic.co/fr/elastic-stack/"
+    },
+    "dnsConfiguration": {
+      "name": "DNS Configuration",
+      "link": "https://www.redhat.com/fr/topics/api/what-is-a-rest-api"
+    },
+    "oauth2": {
+      "name": "OAuth2",
+      "link": "https://auth0.com/fr/intro-to-iam/what-is-oauth-2"
+    },
+    "apiIntegration": {
+      "name": "API Integration",
+      "link": "https://slack.com/intl/fr-fr/blog/developers/integration-dapi#:~:text=L'int%C3%A9gration%20d'API%20(,des%20fonctionnalit%C3%A9s%20de%20mani%C3%A8re%20fluide."
+    },
+    "responsiveDesign": {
+      "name": "Responsive Design",
+      "link": "https://fr.wikipedia.org/wiki/Site_web_r%C3%A9actif"
+    },
+    "providers": {
+      "name": "Store & providers",
+      "link": "https://redux.js.org/introduction/core-concepts"
+    }
+  },
   "projects": {
     "buttons": {
       "contact": "Me contacter",
@@ -20,6 +82,10 @@
       "keyConcepts": "Concepts clés",
       "links": "Liens",
       "contributors": "Contributeurs"
+    },
+    "text": {
+      "source": "Voir le code source sur Github",
+      "site": "Visiter le site"
     },
     "my-vps": {
       "subtitle": "VPS administré par mes soins avec Linux / K3S / Hostinger et plus.",

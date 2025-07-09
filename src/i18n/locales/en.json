@@ -9,6 +9,68 @@
     "contact": "Contact me at ",
     "visit": "or visit my "
   },
+  "concepts": {
+    "cosineSimilarity": {
+      "name": "Cosine Similarity",
+      "link": "https://en.wikipedia.org/wiki/Cosine_similarity"
+    },
+    "lemmatization": {
+      "name": "NLP (Lemmatization)",
+      "link": "https://en.wikipedia.org/wiki/Lemmatisation"
+    },
+    "restApi": {
+      "name": "REST API",
+      "link": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+    },
+    "agile": {
+      "name": "Agile Workflow",
+      "link": "https://en.wikipedia.org/wiki/Agile_software_development"
+    },
+    "gitflow": {
+      "name": "Gitflow",
+      "link": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+    },
+    "containerization": {
+      "name": "Containerization",
+      "link": "https://www.redhat.com/en/topics/automation/what-is-orchestration"
+    },
+    "orchestration": {
+      "name": "Orchestration",
+      "link": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+    },
+    "tlsCertificateManagement": {
+      "name": "TLS Certificate Management",
+      "link": "https://aws.amazon.com/what-is/ssl-certificate/?nc1=h_ls"
+    },
+    "githubAutomation": {
+      "name": "Automation (Github Actions)",
+      "link": "https://github.com/features/actions"
+    },
+    "elk": {
+      "name": "Monitoring (ELK)",
+      "link": "https://www.elastic.co/elastic-stack/"
+    },
+    "dnsConfiguration": {
+      "name": "DNS Configuration",
+      "link": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+    },
+    "oauth2": {
+      "name": "OAuth2",
+      "link": "https://auth0.com/intro-to-iam/what-is-oauth-2"
+    },
+    "apiIntegration": {
+      "name": "API Integration",
+      "link": "https://www.ibm.com/think/topics/api-integration"
+    },
+    "responsiveDesign": {
+      "name": "Responsive Design",
+      "link": "https://en.wikipedia.org/wiki/Responsive_web_design"
+    },
+    "providers": {
+      "name": "Store & providers",
+      "link": "https://redux.js.org/introduction/core-concepts"
+    }
+  },
   "projects": {
     "buttons": {
       "contact": "Contact me",
@@ -21,7 +83,11 @@
       "links": "Links",
       "contributors": "Contributors"
     },
-    "play-manager": {
+    "text": {
+      "source": "View Source on Github",
+      "site": "View Live Site"
+    },
+    "spotify-profile": {
       "subtitle": "Visualize and manage your Spotify profile and playlists.",
       "p1": "This application allows you to visualize and explore insights about your favorite tracks and artists acrossdifferent time ranges, all within a clear and intuitive interface.",
       "p2": " It also provides advanced playlist management features, such as shuffling entire playlists, sorting tracks by release date, and enabling automatic sorting through scheduled cron jobs to keep your playlists organized effortlessly."
