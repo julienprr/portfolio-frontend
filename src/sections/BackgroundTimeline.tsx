@@ -14,43 +14,29 @@ const BackgroundTimeLine = ({ timeline }: { timeline: BackgroundItem[] }) => {
     return <span className="hidden h-4 w-4 rounded-full bg-primary sm:flex"></span>;
   };
 
-  const customizedContent = (item: (typeof timeline)[0]) => {
-    return (
-      <FadeInOnScroll>
-        <Card className={`border border-primary/30 p-4 text-foreground`}>
-          <h3 className="text-xl font-semibold">{item.title}</h3>
-          <div>
-            <h4 className="text-primary">{item.location}</h4>
-            <h4 className="text-sm text-accent">{item.date}</h4>
-          </div>
-          <p className="mt-2 text-base">{item.description}</p>
-        </Card>
-      </FadeInOnScroll>
-    );
-  };
+  const TimelineCard = ({ item }: { item: BackgroundItem }) => (
+    <FadeInOnScroll>
+      <Card className={cn('w-90 border border-primary/30 p-4 text-foreground sm:w-full')}>
+        <h3 className="text-xl font-semibold">{item.title}</h3>
+        <div>
+          <h4 className="text-primary">{item.location}</h4>
+          <h4 className="text-sm text-accent">{item.date}</h4>
+        </div>
+        <p className="mt-2 text-base">{item.description}</p>
+      </Card>
+    </FadeInOnScroll>
+  );
 
   if (breakpoint === 'mobile') {
     return (
       <div className="flex flex-col gap-4">
         {timeline.map((item, index) => (
-          <FadeInOnScroll
+          <div
             key={index}
-            className={cn('flex w-full flex-col', index % 2 === 0 ? 'items-start' : 'items-end')}
+            className={cn('flex w-full flex-col', index % 2 === 0 ? 'items-start text-left' : 'items-end text-right')}
           >
-            <Card
-              className={cn(
-                'w-[90%] border border-primary/30 p-4 text-foreground',
-                index % 2 === 0 ? 'text-left' : 'text-right'
-              )}
-            >
-              <h3 className="text-lg font-semibold">{item.title}</h3>
-              <div>
-                <h4 className="text-primary">{item.location}</h4>
-                <h4 className="text-sm text-accent">{item.date}</h4>
-              </div>
-              <p className="mt-2 text-sm">{item.description}</p>
-            </Card>
-          </FadeInOnScroll>
+            <TimelineCard item={item} />
+          </div>
         ))}
       </div>
     );
@@ -60,7 +46,7 @@ const BackgroundTimeLine = ({ timeline }: { timeline: BackgroundItem[] }) => {
         value={timeline}
         align="alternate"
         marker={customizedMarker}
-        content={(item) => customizedContent(item)}
+        content={(item) => <TimelineCard item={item} />}
         opposite={() => null}
         className="text-foreground"
         style={{ position: 'relative' }}
