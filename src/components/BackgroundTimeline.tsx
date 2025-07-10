@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { useBreakpoint } from '@/hooks/useBreakpoint';
 import { cn } from '@/lib/utils';
 
-import type { BackgroundItem } from './TimelineSection';
+import type { BackgroundItem } from '../sections/TimelineSection';
 
 const BackgroundTimeLine = ({ timeline }: { timeline: BackgroundItem[] }) => {
   const breakpoint = useBreakpoint();

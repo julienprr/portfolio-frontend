@@ -33,7 +33,7 @@ const AnimatedSection = ({
     initial="hidden"
     whileInView="visible"
     exit="hidden"
-    viewport={{ once: false, amount: 0.05 }}
+    viewport={{ once: false, amount: 0 }}
     className={className}
   >
     {React.Children.map(children, (child) => (
