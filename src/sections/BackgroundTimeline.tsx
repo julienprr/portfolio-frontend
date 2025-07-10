@@ -16,7 +16,7 @@ const BackgroundTimeLine = ({ timeline }: { timeline: BackgroundItem[] }) => {
 
   const TimelineCard = ({ item }: { item: BackgroundItem }) => (
     <FadeInOnScroll>
-      <Card className={cn('w-90 border border-primary/30 p-4 text-foreground sm:w-full')}>
+      <Card className={cn('w-90 border border-primary/30 p-4 text-foreground sm:w-full bg-card')}>
         <h3 className="text-xl font-semibold">{item.title}</h3>
         <div>
           <h4 className="text-primary">{item.location}</h4>
