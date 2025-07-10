@@ -9,16 +9,135 @@
     "contact": "Contactez moi:  ",
     "visit": "ou visitez mon "
   },
+  "background": {
+    "title": "Parcours",
+    "subtitle": "Expériences professionnelles et formations",
+    "items": [
+      {
+        "date": "Septembre 2025",
+        "title": "Mastère Spécialisé Architecte Digital d’Entreprise",
+        "location": "Télécom Paris",
+        "description": "Actuellement en cours d’un Mastère Spécialisé axé sur l’architecture des systèmes d’information, la transformation digitale, l’urbanisation des SI et l’innovation technologique."
+      },
+      {
+        "date": "Août 2024",
+        "title": "Master MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)",
+        "location": "Université de Rennes 1",
+        "description": "Diplômé d’un Master MIAGE, spécialisé dans le développement logiciel et l’intégration de systèmes."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Développeur Web pour le GNFA",
+        "location": "Sii, Rennes",
+        "description": "Participation à la maintenance et l’amélioration de plusieurs applications pour le GNFA, un acteur majeur de la formation professionnelle dans le secteur automobile."
+      },
+      {
+        "date": "2022 - 2023",
+        "title": "Développeur Web – Projet Weather",
+        "location": "Sii, Rennes",
+        "description": "Participation au développement de “Weather”, une application interne de gestion et de saisie de reporting destinée aux chefs de projet, directeurs de programme et delivery managers de Sii."
+      },
+      {
+        "date": "Août 2022",
+        "title": "Licence Informatique (MIAGE)",
+        "location": "Université de Rennes 1",
+        "description": "Diplômé d’une Licence MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)."
+      }
+    ]
+  },
+  "concepts": {
+    "cosineSimilarity": {
+      "name": "Similarité cosinus",
+      "link": "https://fr.wikipedia.org/wiki/Similarit%C3%A9_cosinus"
+    },
+    "lemmatization": {
+      "name": "TAL (Lemmatisation)",
+      "link": "https://fr.wikipedia.org/wiki/Lemmatisation"
+    },
+    "restApi": {
+      "name": "API REST",
+      "link": "https://www.redhat.com/fr/topics/api/what-is-a-rest-api"
+    },
+    "agile": {
+      "name": "Méthodologie Agile",
+      "link": "https://fr.wikipedia.org/wiki/M%C3%A9thode_agile"
+    },
+    "gitflow": {
+      "name": "Gitflow",
+      "link": "https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow"
+    },
+    "containerization": {
+      "name": "Conteneurisation",
+      "link": "https://www.redhat.com/fr/topics/automation/what-is-orchestration"
+    },
+    "orchestration": {
+      "name": "Orchestration",
+      "link": "https://www.redhat.com/fr/topics/api/what-is-a-rest-api"
+    },
+    "tlsCertificateManagement": {
+      "name": "Gestion de certificats TLS",
+      "link": "https://aws.amazon.com/fr/what-is/ssl-certificate/"
+    },
+    "githubAutomation": {
+      "name": "Automation (Github Actions)",
+      "link": "https://github.com/features/actions"
+    },
+    "elk": {
+      "name": "Monitoring (ELK)",
+      "link": "https://www.elastic.co/fr/elastic-stack/"
+    },
+    "dnsConfiguration": {
+      "name": "DNS Configuration",
+      "link": "https://www.redhat.com/fr/topics/api/what-is-a-rest-api"
+    },
+    "oauth2": {
+      "name": "OAuth2",
+      "link": "https://auth0.com/fr/intro-to-iam/what-is-oauth-2"
+    },
+    "apiIntegration": {
+      "name": "API Integration",
+      "link": "https://slack.com/intl/fr-fr/blog/developers/integration-dapi#:~:text=L'int%C3%A9gration%20d'API%20(,des%20fonctionnalit%C3%A9s%20de%20mani%C3%A8re%20fluide."
+    },
+    "responsiveDesign": {
+      "name": "Responsive Design",
+      "link": "https://fr.wikipedia.org/wiki/Site_web_r%C3%A9actif"
+    },
+    "providers": {
+      "name": "Store & providers",
+      "link": "https://redux.js.org/introduction/core-concepts"
+    }
+  },
   "projects": {
     "buttons": {
       "contact": "Me contacter",
       "viewProject": "Voir le projet"
     },
     "titles": {
+      "myProjects": "Mes Projets",
       "about": "À propos",
       "technologies": "Technologies utilisées",
       "keyConcepts": "Concepts clés",
-      "links": "Liens"
+      "links": "Liens",
+      "contributors": "Contributeurs"
+    },
+    "text": {
+      "source": "Voir le code source sur Github",
+      "site": "Visiter le site"
+    },
+    "spotify-profile": {
+      "subtitle": "Explorez vos habitudes d’écoute et prenez le contrôle de vos playlists spotify ",
+      "p1": {
+        "title": "Explorez vos habitudes d’écoute",
+        "content": "Spotify Profile offre une nouvelle façon d’explorer votre musique. Vous pouvez découvrir vos morceaux et artistes les plus écoutés sur différentes périodes et redécouvrir des titres que vous aimiez il y a des mois, voire des années. L’interface épurée et intuitive facilite la navigation dans vos données musicales."
+      },
+      "p2": {
+        "title": "Prenez le contrôle de vos playlists",
+        "content": "Gérer vos playlists n’a jamais été aussi simple. Avec Spotify Profile, vous pouvez mélanger des playlists entières, trier les morceaux par date de sortie et garder votre bibliothèque organisée sans effort. Vous pouvez même activer le tri automatique pour que vos playlists restent à jour en permanence."
+      },
+      "p3": {
+        "title": "Restez organisé automatiquement",
+        "content": "Une fois configuré, Spotify Profile peut gérer les tâches répétitives pour vous. Grâce aux mises à jour programmées et au tri intelligent, vous passez moins de temps à organiser vos playlists et plus de temps à profiter de votre musique."
+      }
     },
     "my-vps": {
       "subtitle": "VPS administré par mes soins avec Linux / K3S / Hostinger et plus.",
@@ -45,6 +164,29 @@
       "p6": {
         "title": "Automatisation et pratiques DevOps",
         "content": "L’infrastructure est entièrement versionnée et gérée selon les pratiques Infrastructure as Code, permettant des déploiements et une montée en charge rapides."
+      }
+    },
+    "compdoc": {
+      "subtitle": "Un outil académique pour comparer les rapports de jury et les bibliographies en préparation du CAPES.",
+      "p1": {
+        "title": "Contexte du projet",
+        "content": "CompDoc a été initié par l’équipe de recherche DRUID de l’Université de Rennes dans le cadre du projet CLARA. Il est conçu pour aider les étudiants préparant le CAPES de biologie en leur fournissant des informations sur les sujets récurrents aux épreuves orales et les bibliographies pertinentes. Dans le cadre de cette collaboration académique, notre équipe s’est auto-organisée et a mené le projet de la conception jusqu’au déploiement."
+      },
+      "p2": {
+        "title": "Analyse des rapports de jury et des bibliographies",
+        "content": "L’outil permet aux étudiants de comparer les rapports de jury et les bibliographies de différentes années, en mettant en évidence les principales différences et tendances. Cette fonctionnalité aide les candidats à identifier les sujets à prioriser pour leurs épreuves orales et les ouvrages qu’ils sont autorisés à consulter pendant celles-ci."
+      },
+      "p3": {
+        "title": "Traitement avancé des données et visualisation",
+        "content": "CompDoc intègre des techniques d’analyse de données telles que la similarité cosinus et la lemmatisation pour associer des chapitres à des sujets spécifiques des épreuves orales. Il offre également des représentations visuelles des relations sémantiques entre des termes clés dans le domaine de la biologie, permettant aux utilisateurs de mieux comprendre les connexions dans le contenu."
+      },
+      "p4": {
+        "title": "Stack technique et déploiement",
+        "content": "Le backend a été développé en Python avec FastAPI pour fournir une API REST robuste d’analyse de documents. Côté frontend, nous avons utilisé Preact et Material UI pour concevoir une interface rapide et intuitive prenant en charge des fonctionnalités de recherche et de filtrage avancées. L’application a été déployée avec Docker Compose et servie via Nginx pour la mise en production."
+      },
+      "p5": {
+        "title": "Collaboration et méthodes de travail",
+        "content": "Tout au long du projet, nous avons suivi des méthodologies agiles avec des sprints réguliers et des démonstrations. Les enseignants encadrants ont joué le rôle de Product Owners, orientant le processus de développement. Nous avons également adopté Gitflow pour une gestion efficace des branches, assurant un workflow collaboratif fluide."
       }
     }
   }

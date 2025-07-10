@@ -9,24 +9,138 @@
     "contact": "Contact me at ",
     "visit": "or visit my "
   },
+  "background": {
+    "title": "Background",
+    "subtitle": "Experience & Education",
+    "items": [
+      {
+        "date": "September 2025",
+        "title": "Specialized Master’s in Digital Enterprise Architecture",
+        "location": "Télécom Paris",
+        "description": "Currently pursuing a Specialized Master’s degree focused on IT architecture, digital transformation, enterprise system urbanization, and technological innovation."
+      },
+      {
+        "date": "August 2024",
+        "title": "Master’s Degree in Computer Science (MIAGE)",
+        "location": "University of Rennes 1",
+        "description": "Graduated with a Master’s degree in Computer Science, MIAGE program (Applied Computer Methods for Business Management), specializing in software development and systems integration."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Web Developer for GNFA",
+        "location": "Sii, Rennes",
+        "description": "Contributed to the maintenance and enhancement of multiple applications for GNFA, a leading organization in professional training for the automotive sector."
+      },
+      {
+        "date": "2022 - 2023",
+        "title": "Web Developer – Weather Project",
+        "location": "Sii, Rennes",
+        "description": "Participated in the development of “Weather,” an internal reporting management application for project managers, program directors, and delivery managers at Sii."
+      },
+      {
+        "date": "August 2022",
+        "title": "Bachelor’s Degree in Computer Science (MIAGE)",
+        "location": "University of Rennes 1",
+        "description": "Graduated with a Bachelor’s degree in Computer Science, MIAGE program (Applied Computer Methods for Business Management)."
+      }
+    ]
+  },
+  "concepts": {
+    "cosineSimilarity": {
+      "name": "Cosine Similarity",
+      "link": "https://en.wikipedia.org/wiki/Cosine_similarity"
+    },
+    "lemmatization": {
+      "name": "NLP (Lemmatization)",
+      "link": "https://en.wikipedia.org/wiki/Lemmatisation"
+    },
+    "restApi": {
+      "name": "REST API",
+      "link": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+    },
+    "agile": {
+      "name": "Agile Workflow",
+      "link": "https://en.wikipedia.org/wiki/Agile_software_development"
+    },
+    "gitflow": {
+      "name": "Gitflow",
+      "link": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+    },
+    "containerization": {
+      "name": "Containerization",
+      "link": "https://www.redhat.com/en/topics/automation/what-is-orchestration"
+    },
+    "orchestration": {
+      "name": "Orchestration",
+      "link": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+    },
+    "tlsCertificateManagement": {
+      "name": "TLS Certificate Management",
+      "link": "https://aws.amazon.com/what-is/ssl-certificate/?nc1=h_ls"
+    },
+    "githubAutomation": {
+      "name": "Automation (Github Actions)",
+      "link": "https://github.com/features/actions"
+    },
+    "elk": {
+      "name": "Monitoring (ELK)",
+      "link": "https://www.elastic.co/elastic-stack/"
+    },
+    "dnsConfiguration": {
+      "name": "DNS Configuration",
+      "link": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+    },
+    "oauth2": {
+      "name": "OAuth2",
+      "link": "https://auth0.com/intro-to-iam/what-is-oauth-2"
+    },
+    "apiIntegration": {
+      "name": "API Integration",
+      "link": "https://www.ibm.com/think/topics/api-integration"
+    },
+    "responsiveDesign": {
+      "name": "Responsive Design",
+      "link": "https://en.wikipedia.org/wiki/Responsive_web_design"
+    },
+    "providers": {
+      "name": "Store & providers",
+      "link": "https://redux.js.org/introduction/core-concepts"
+    }
+  },
   "projects": {
     "buttons": {
       "contact": "Contact me",
       "viewProject": "View Project"
     },
     "titles": {
+      "myProjects": "My Projects",
       "about": "About",
       "technologies": "Technologies Used",
       "keyConcepts": "Key Concepts",
-      "links": "Links"
+      "links": "Links",
+      "contributors": "Contributors"
     },
-    "play-manager": {
-      "subtitle": "Visualize and manage your Spotify profile and playlists.",
-      "p1": "This application allows you to visualize and explore insights about your favorite tracks and artists acrossdifferent time ranges, all within a clear and intuitive interface.",
-      "p2": " It also provides advanced playlist management features, such as shuffling entire playlists, sorting tracks by release date, and enabling automatic sorting through scheduled cron jobs to keep your playlists organized effortlessly."
+    "text": {
+      "source": "View Source on Github",
+      "site": "View Live Site"
+    },
+    "spotify-profile": {
+      "subtitle": "Explore your listening habits and take control of your Spotify playlists.",
+      "p1": {
+        "title": "Explore Your Listening Habits",
+        "content": "Spotify Profile offers a fresh way to dive into your music. You can explore your most played tracks and artists across different time ranges and rediscover songs you loved months or even years ago. The clean, intuitive interface makes it easy to navigate through your music data."
+      },
+      "p2": {
+        "title": "Take Control of Your Playlists",
+        "content": "Managing playlists has never been so simple. With Spotify Profile, you can shuffle entire playlists, sort tracks by their release date, and keep your library organized without effort. You can even activate automatic sorting, so your playlists stay up to date with minimal work on your part."
+      },
+      "p3": {
+        "title": "Stay Organized Automatically",
+        "content": "Once configured, Spotify Profile can handle the repetitive tasks for you. With scheduled updates and intelligent sorting, you can spend less time managing your playlists and more time enjoying your music."
+      }
     },
     "my-vps": {
-      "subtitle": "VPS managed by myself with Linux / K3S / Hostinger & More.",
+      "subtitle": "VPS managed by myself with Linux / k3s / Hostinger and more.",
       "p1": {
         "title": "Building a Kubernetes Infrastructure on a VPS",
         "content": "As part of my personal projects and to strengthen my expertise in infrastructure and DevOps, I designed and deployed a full Kubernetes-based architecture on a VPS to host and automate the management of multiple web applications. The goal was to create a modern environment aligned with enterprise standards, while mastering tools for deployment, monitoring, and security."
@@ -50,6 +164,29 @@
       "p6": {
         "title": "Automation and DevOps Practices",
         "content": "The infrastructure is fully versioned and managed with Infrastructure as Code practices, enabling quick deployment and scaling."
+      }
+    },
+    "compdoc": {
+      "subtitle": "An academic tool to compare jury reports and bibliographies for CAPES preparation.",
+      "p1": {
+        "title": "Project Context",
+        "content": "CompDoc was initiated by the DRUID research team at the University of Rennes within the CLARA project framework. It is designed to support students preparing for the biology CAPES exam by providing insights into recurring oral exam topics and relevant bibliographies. As part of this academic collaboration, our team self-organized and took the project from conception to deployment."
+      },
+      "p2": {
+        "title": "Analyzing Jury Reports and Bibliographies",
+        "content": "The tool enables students to compare jury reports and bibliographies from different years, highlighting key differences and trends. This feature helps candidates identify which topics to prioritize for their oral exams and which books they are allowed to consult during the test."
+      },
+      "p3": {
+        "title": "Advanced Data Processing and Visualization",
+        "content": "CompDoc integrates data analysis techniques such as cosine similarity and lemmatization to associate chapters with specific oral exam topics. It also provides visual representations of semantic relationships between key terms in the biology domain, helping users understand connections in the material more effectively."
+      },
+      "p4": {
+        "title": "Technical Stack and Deployment",
+        "content": "The backend was built with Python using FastAPI to deliver a robust REST API for document analysis. On the frontend, we used Preact with Material UI to design a fast, intuitive interface supporting advanced search and filtering features. The application was deployed using Docker Compose and served with Nginx for production readiness."
+      },
+      "p5": {
+        "title": "Collaboration and Workflow",
+        "content": "Throughout the project, we followed Agile methodologies with regular sprints and demos. Professors acted as Product Owners, guiding the development process. We also adopted Gitflow for efficient branch management, ensuring a smooth collaborative workflow."
       }
     }
   }

@@ -75,8 +75,8 @@
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent: oklch(0.769 0.188 70.08);
+  --accent-foreground: oklch(28.094% 0.00003 271.152);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
@@ -111,8 +111,8 @@
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --accent: oklch(93.981% 0.19963 108.482);
+  --accent-foreground: oklch(28.094% 0.00003 271.152);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
@@ -133,10 +133,20 @@
 }
 
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
   }
-  body, p, span, li, a, div {
+  body,
+  p,
+  span,
+  li,
+  a,
+  div {
     font-family: var(--font-body);
   }
   body {
@@ -155,9 +165,15 @@
 
 @layer components {
   .section-title {
-    @apply text-xl sm:text-2xl lg:text-4xl text-primary mb-4 sm:mb-8;
+    @apply mb-2 text-3xl text-primary sm:mb-6 sm:text-5xl;
   }
-   .paragraph-title {
-    @apply font-bold text-lg  sm:text-2xl  mb-1 sm:mb-2;
+  .section-subtitle {
+    @apply mb-8 sm:mb-12 text-lg sm:text-xl text-muted-foreground
+  }
+  .paragraph-title {
+    @apply mb-1 text-lg font-bold sm:mb-2 sm:text-2xl;
+  }
+  .link {
+    @apply underline hover:text-accent;
   }
 }

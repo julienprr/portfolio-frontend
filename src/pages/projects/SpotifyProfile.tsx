@@ -1,39 +1,51 @@
 import { useTranslation } from 'react-i18next';
 
-import SpotifyProfileImage from '@/assets/images/projects/spotify-profile.png';
+import ConceptBadge from '@/components/ConceptBadge';
 import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
-import { Badge } from '@/components/ui/badge';
+
+import SpotifyProfileImage from '/images/projects/spotify-profile/sc_playlist_details.png';
+import AnimatedSection from '@/components/AnimatedSection';
 
 const SpotifyProfile = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-4xl mx-auto px-4 py-12">
+    <AnimatedSection className="mx-auto max-w-4xl px-4 py-12">
       {/* Project Header */}
       <FadeInOnScroll className="mb-6">
-        <h1 className="text-2xl sm:text-6xl font-heading mb-2 text-primary">Spotify Profile</h1>
-        <p className="text-muted-foreground text-lg">{t("projects.play-manager.subtitle")}</p>
+        <h1 className="font-heading mb-2 text-2xl text-primary sm:text-6xl">Spotify Profile</h1>
+        <p className="text-lg text-muted-foreground">{t('projects.spotify-profile.subtitle')}</p>
       </FadeInOnScroll>
 
       {/* Project Image */}
-      <FadeInOnScroll className="rounded-lg overflow-hidden shadow-lg mb-6 sm:mb-12 border border-primary">
-        <img src={SpotifyProfileImage} alt="Spotify Profile Screenshot" className="w-full object-cover " />
+      <FadeInOnScroll className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
+        <img src={SpotifyProfileImage} alt="Spotify Profile Screenshot" className="w-full object-cover" />
       </FadeInOnScroll>
 
       {/* Detailed Description */}
-      <FadeInOnScroll className="text-left mb-4">
-        <h2 className="section-title">{t("projects.titles.about")}</h2>
-        <p>{t('projects.play-manager.p1')}</p>
+      <FadeInOnScroll className="mb-4 text-left">
+        <h2 className="section-title">{t('projects.titles.about')}</h2>
       </FadeInOnScroll>
 
-      <FadeInOnScroll className="text-left mb-4 sm:mb-12">
-        <p>{t('projects.play-manager.p2')}</p>
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+        <h3 className="paragraph-title">{t('projects.spotify-profile.p1.title')}</h3>
+        <p>{t('projects.spotify-profile.p1.content')}</p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+        <h3 className="paragraph-title">{t('projects.spotify-profile.p2.title')}</h3>
+        <p>{t('projects.spotify-profile.p2.content')}</p>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+        <h3 className="paragraph-title">{t('projects.spotify-profile.p3.title')}</h3>
+        <p>{t('projects.spotify-profile.p3.content')}</p>
       </FadeInOnScroll>
 
       {/* Technologies */}
-      <FadeInOnScroll className="space-y-6 text-left mb-6 sm:mb-12">
-        <h2 className="section-title">{t("projects.titles.technologies")}</h2>
+      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+        <h2 className="section-title">{t('projects.titles.technologies')}</h2>
         <div className="flex flex-wrap gap-2">
           <TechnoBadge name="NestJS" src="/icons/nestjs.svg" alt="NestJS" />
           <TechnoBadge name="React" src="/icons/react.svg" alt="React" />
@@ -45,41 +57,37 @@ const SpotifyProfile = () => {
       </FadeInOnScroll>
 
       {/* Concepts */}
-      <FadeInOnScroll className="space-y-6 text-left mb-6 sm:mb-12">
+      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
         <div>
-          <h2 className="section-title">{t("projects.titles.keyConcepts")}</h2>
+          <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
-            <Badge variant={'outline'}>OAuth2</Badge>
-            <Badge variant={'outline'}>API Integration</Badge>
-            <Badge variant={'outline'}>Responsive Design</Badge>
-            <Badge variant={'outline'}>Store & providers</Badge>
+            <ConceptBadge conceptKey="concepts.oauth2" />
+            <ConceptBadge conceptKey="concepts.apiIntegration" />
+            <ConceptBadge conceptKey="concepts.restApi" />
+            <ConceptBadge conceptKey="concepts.responsiveDesign" />
+            <ConceptBadge conceptKey="concepts.providers" />
           </div>
         </div>
       </FadeInOnScroll>
-      {/* Links */}
 
+      {/* Links */}
       <FadeInOnScroll className="space-y-6 text-left">
-        <h2 className="section-title">{t("projects.titles.links")}</h2>
-        <div className="flex flex-col gap-2 mt-6">
+        <h2 className="section-title">{t('projects.titles.links')}</h2>
+        <div className="mt-6 flex flex-col gap-2">
           <a
             href="https://github.com/julienprr/Spotify-Profile-Frontend"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-primary"
+            className="link"
           >
-            View Source on GitHub
+            {t('projects.text.source')}
           </a>
-          <a
-            href="https://spotify-profile.julienprr.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-primary"
-          >
-            Visit Live Site
+          <a href="https://spotify-profile.julienprr.com" target="_blank" rel="noopener noreferrer" className="link">
+            {t('projects.text.site')}
           </a>
         </div>
       </FadeInOnScroll>
-    </section>
+    </AnimatedSection>
   );
 };
 

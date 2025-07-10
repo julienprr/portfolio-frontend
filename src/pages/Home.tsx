@@ -1,11 +1,13 @@
+import HeroSection from '@/sections/HeroSection';
 import ProjectsSection from '@/sections/ProjectsSections';
-import HeroSection from '../sections/HeroSection';
+import TimelineSection from '@/sections/TimelineSection';
 
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col overflow-y-auto">
+    <main className="flex min-h-screen flex-col overflow-y-auto gap-12">
       <HeroSection />
-      <ProjectsSection/>
+      <ProjectsSection />
+      <TimelineSection />
     </main>
   );
 };
