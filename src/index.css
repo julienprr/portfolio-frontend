@@ -165,7 +165,10 @@
 
 @layer components {
   .section-title {
-    @apply mb-4 text-xl text-primary sm:mb-8 sm:text-2xl lg:text-4xl;
+    @apply mb-2 text-3xl text-primary sm:mb-6 sm:text-5xl;
+  }
+  .section-subtitle {
+    @apply mb-8 sm:mb-12 text-lg sm:text-xl text-muted-foreground
   }
   .paragraph-title {
     @apply mb-1 text-lg font-bold sm:mb-2 sm:text-2xl;

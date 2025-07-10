@@ -5,12 +5,13 @@ import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
 
 import SpotifyProfileImage from '/images/projects/spotify-profile/sc_playlist_details.png';
+import AnimatedSection from '@/components/AnimatedSection';
 
 const SpotifyProfile = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="mx-auto max-w-4xl px-4 py-12">
+    <AnimatedSection className="mx-auto max-w-4xl px-4 py-12">
       {/* Project Header */}
       <FadeInOnScroll className="mb-6">
         <h1 className="font-heading mb-2 text-2xl text-primary sm:text-6xl">Spotify Profile</h1>
@@ -86,7 +87,7 @@ const SpotifyProfile = () => {
           </a>
         </div>
       </FadeInOnScroll>
-    </section>
+    </AnimatedSection>
   );
 };
 

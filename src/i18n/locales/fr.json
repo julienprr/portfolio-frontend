@@ -9,6 +9,42 @@
     "contact": "Contactez moi:  ",
     "visit": "ou visitez mon "
   },
+  "background": {
+    "title": "Parcours",
+    "subtitle": "Expériences professionnelles et formations",
+    "items": [
+      {
+        "date": "Septembre 2025",
+        "title": "Mastère Spécialisé Architecte Digital d’Entreprise",
+        "location": "Télécom Paris",
+        "description": "Actuellement en cours d’un Mastère Spécialisé axé sur l’architecture des systèmes d’information, la transformation digitale, l’urbanisation des SI et l’innovation technologique."
+      },
+      {
+        "date": "Août 2024",
+        "title": "Master MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)",
+        "location": "Université de Rennes 1",
+        "description": "Diplômé d’un Master MIAGE, spécialisé dans le développement logiciel et l’intégration de systèmes."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Développeur Web pour le GNFA",
+        "location": "Sii, Rennes",
+        "description": "Participation à la maintenance et l’amélioration de plusieurs applications pour le GNFA, un acteur majeur de la formation professionnelle dans le secteur automobile."
+      },
+      {
+        "date": "2022 - 2023",
+        "title": "Développeur Web – Projet Weather",
+        "location": "Sii, Rennes",
+        "description": "Participation au développement de “Weather”, une application interne de gestion et de saisie de reporting destinée aux chefs de projet, directeurs de programme et delivery managers de Sii."
+      },
+      {
+        "date": "Août 2022",
+        "title": "Licence Informatique (MIAGE)",
+        "location": "Université de Rennes 1",
+        "description": "Diplômé d’une Licence MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)."
+      }
+    ]
+  },
   "concepts": {
     "cosineSimilarity": {
       "name": "Similarité cosinus",
