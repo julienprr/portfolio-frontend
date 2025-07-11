@@ -168,7 +168,7 @@
     @apply mb-2 text-3xl text-primary sm:mb-6 sm:text-5xl;
   }
   .section-subtitle {
-    @apply mb-8 sm:mb-12 text-lg sm:text-xl text-muted-foreground
+    @apply mb-8 text-lg text-muted-foreground sm:mb-12 sm:text-xl;
   }
   .paragraph-title {
     @apply mb-1 text-lg font-bold sm:mb-2 sm:text-2xl;

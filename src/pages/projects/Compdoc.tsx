@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
+import AnimatedSection from '@/components/AnimatedSection';
 import ConceptBadge from '@/components/ConceptBadge';
-import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
 
 import CompdocHomepageImage from '/images/projects/compdoc/sc_homepage.png';
@@ -10,50 +10,50 @@ const Compdoc = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="mx-auto max-w-4xl px-4 py-12">
+    <AnimatedSection className="mx-auto max-w-4xl px-4 py-12">
       {/* Project Header */}
-      <FadeInOnScroll className="mb-6">
+      <div className="mb-6">
         <h1 className="font-heading mb-2 text-2xl text-primary sm:text-6xl">Compdoc</h1>
         <p className="text-lg text-muted-foreground">{t('projects.compdoc.subtitle')}</p>
-      </FadeInOnScroll>
+      </div>
 
       {/* Project Image */}
-      <FadeInOnScroll className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
+      <div className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
         <img src={CompdocHomepageImage} alt="Compdoc Screenshot" className="w-full object-cover" />
-      </FadeInOnScroll>
+      </div>
 
       {/* Detailed Description */}
-      <FadeInOnScroll className="mb-4 text-left">
+      <div className="mb-4 text-left">
         <h2 className="section-title">{t('projects.titles.about')}</h2>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.compdoc.p1.title')}</h3>
         <p>{t('projects.compdoc.p1.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.compdoc.p2.title')}</h3>
         <p>{t('projects.compdoc.p2.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.compdoc.p3.title')}</h3>
         <p>{t('projects.compdoc.p3.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.compdoc.p4.title')}</h3>
         <p>{t('projects.compdoc.p4.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.compdoc.p5.title')}</h3>
         <p>{t('projects.compdoc.p5.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
       {/* Technologies */}
-      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+      <div className="mb-6 space-y-6 text-left sm:mb-12">
         <h2 className="section-title">{t('projects.titles.technologies')}</h2>
         <div className="flex flex-wrap gap-2">
           <TechnoBadge name="FastAPI" src="/icons/fastapi.svg" alt="FastAPI" />
@@ -63,10 +63,10 @@ const Compdoc = () => {
           <TechnoBadge name="Docker" src="/icons/docker.svg" alt="Docker" />
           <TechnoBadge name="Nginx" src="/icons/nginx.svg" alt="Nginx" />
         </div>
-      </FadeInOnScroll>
+      </div>
 
       {/* Concepts */}
-      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+      <div className="mb-6 space-y-6 text-left sm:mb-12">
         <div>
           <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
@@ -77,10 +77,10 @@ const Compdoc = () => {
             <ConceptBadge conceptKey="concepts.gitflow" />
           </div>
         </div>
-      </FadeInOnScroll>
+      </div>
 
       {/* Contributors */}
-      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+      <div className="mb-6 space-y-6 text-left sm:mb-12">
         <div>
           <h2 className="section-title">{t('projects.titles.contributors')}</h2>
           <div className="flex flex-wrap gap-2">
@@ -98,18 +98,18 @@ const Compdoc = () => {
             </a>
           </div>
         </div>
-      </FadeInOnScroll>
+      </div>
 
       {/* Links */}
-      <FadeInOnScroll className="space-y-6 text-left">
+      <div className="space-y-6 text-left">
         <h2 className="section-title">{t('projects.titles.links')}</h2>
         <div className="mt-6 flex flex-col gap-2">
           <a href="https://github.com/julienprr/compdoc" target="_blank" rel="noopener noreferrer" className="link">
             {t('projects.text.source')}
           </a>
         </div>
-      </FadeInOnScroll>
-    </section>
+      </div>
+    </AnimatedSection>
   );
 };
 

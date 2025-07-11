@@ -1,11 +1,10 @@
 import { useTranslation } from 'react-i18next';
 
+import AnimatedSection from '@/components/AnimatedSection';
 import ConceptBadge from '@/components/ConceptBadge';
-import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
 
 import SpotifyProfileImage from '/images/projects/spotify-profile/sc_playlist_details.png';
-import AnimatedSection from '@/components/AnimatedSection';
 
 const SpotifyProfile = () => {
   const { t } = useTranslation();
@@ -13,38 +12,38 @@ const SpotifyProfile = () => {
   return (
     <AnimatedSection className="mx-auto max-w-4xl px-4 py-12">
       {/* Project Header */}
-      <FadeInOnScroll className="mb-6">
+      <div className="mb-6">
         <h1 className="font-heading mb-2 text-2xl text-primary sm:text-6xl">Spotify Profile</h1>
         <p className="text-lg text-muted-foreground">{t('projects.spotify-profile.subtitle')}</p>
-      </FadeInOnScroll>
+      </div>
 
       {/* Project Image */}
-      <FadeInOnScroll className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
+      <div className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
         <img src={SpotifyProfileImage} alt="Spotify Profile Screenshot" className="w-full object-cover" />
-      </FadeInOnScroll>
+      </div>
 
       {/* Detailed Description */}
-      <FadeInOnScroll className="mb-4 text-left">
+      <div className="mb-4 text-left">
         <h2 className="section-title">{t('projects.titles.about')}</h2>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.spotify-profile.p1.title')}</h3>
         <p>{t('projects.spotify-profile.p1.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.spotify-profile.p2.title')}</h3>
         <p>{t('projects.spotify-profile.p2.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.spotify-profile.p3.title')}</h3>
         <p>{t('projects.spotify-profile.p3.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
       {/* Technologies */}
-      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+      <div className="mb-6 space-y-6 text-left sm:mb-12">
         <h2 className="section-title">{t('projects.titles.technologies')}</h2>
         <div className="flex flex-wrap gap-2">
           <TechnoBadge name="NestJS" src="/icons/nestjs.svg" alt="NestJS" />
@@ -54,10 +53,10 @@ const SpotifyProfile = () => {
           <TechnoBadge name="Tailwind CSS" src="/icons/tailwindcss.svg" alt="Tailwind CSS" />
           <TechnoBadge name="Spotify API" src="/icons/spotify.svg" alt="Spotify API" />
         </div>
-      </FadeInOnScroll>
+      </div>
 
       {/* Concepts */}
-      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+      <div className="mb-6 space-y-6 text-left sm:mb-12">
         <div>
           <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
@@ -68,10 +67,10 @@ const SpotifyProfile = () => {
             <ConceptBadge conceptKey="concepts.providers" />
           </div>
         </div>
-      </FadeInOnScroll>
+      </div>
 
       {/* Links */}
-      <FadeInOnScroll className="space-y-6 text-left">
+      <div className="space-y-6 text-left">
         <h2 className="section-title">{t('projects.titles.links')}</h2>
         <div className="mt-6 flex flex-col gap-2">
           <a
@@ -86,7 +85,7 @@ const SpotifyProfile = () => {
             {t('projects.text.site')}
           </a>
         </div>
-      </FadeInOnScroll>
+      </div>
     </AnimatedSection>
   );
 };

@@ -1,5 +1,8 @@
-import { motion } from 'framer-motion';
 import React from 'react';
+
+import { motion } from 'framer-motion';
+
+import FadeInOnScroll from './FadeInOnScroll';
 
 const containerVariants = {
   hidden: {},
@@ -28,18 +31,11 @@ const AnimatedSection = ({
   children: React.ReactNode;
   stagger?: boolean;
 }) => (
-  <motion.section
-    variants={stagger ? containerVariants : undefined}
-    initial="hidden"
-    whileInView="visible"
-    exit="hidden"
-    viewport={{ once: false, amount: 0 }}
-    className={className}
-  >
+  <section>
     {React.Children.map(children, (child) => (
-      <motion.div variants={childVariants}>{child}</motion.div>
+      <FadeInOnScroll>{child}</FadeInOnScroll>
     ))}
-  </motion.section>
+  </section>
 );
 
 export default AnimatedSection;
