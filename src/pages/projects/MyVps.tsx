@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
+import AnimatedSection from '@/components/AnimatedSection';
 import ConceptBadge from '@/components/ConceptBadge';
-import FadeInOnScroll from '@/components/FadeInOnScroll';
 import TechnoBadge from '@/components/TechnoBadge';
 
 import vpsCover from '/images/projects/vps-cover.png';
@@ -10,55 +10,55 @@ const MyVPS = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="mx-auto max-w-4xl px-4 py-12">
+    <AnimatedSection className="mx-auto max-w-4xl px-4 py-12">
       {/* Project Header */}
-      <FadeInOnScroll className="mb-6">
+      <div className="mb-6">
         <h1 className="font-heading mb-2 text-2xl text-primary sm:text-6xl">My VPS</h1>
         <p className="text-lg text-muted-foreground">{t('projects.my-vps.subtitle')}</p>
-      </FadeInOnScroll>
+      </div>
 
       {/* Project Image */}
-      <FadeInOnScroll className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
+      <div className="mb-6 overflow-hidden rounded-lg border border-primary shadow-lg sm:mb-12">
         <img src={vpsCover} alt="Spotify Profile Screenshot" className="w-full object-cover" />
-      </FadeInOnScroll>
+      </div>
 
       {/* Detailed Description */}
-      <FadeInOnScroll className="mb-4 text-left">
+      <div className="mb-4 text-left">
         <h2 className="section-title">{t('projects.titles.about')}</h2>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p1.title')}</h3>
         <p>{t('projects.my-vps.p1.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p2.title')}</h3>
         <p>{t('projects.my-vps.p2.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p3.title')}</h3>
         <p>{t('projects.my-vps.p3.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p4.title')}</h3>
         <p>{t('projects.my-vps.p4.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p5.title')}</h3>
         <p>{t('projects.my-vps.p5.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
-      <FadeInOnScroll className="mb-4 text-left sm:mb-6">
+      <div className="mb-4 text-left sm:mb-6">
         <h3 className="paragraph-title">{t('projects.my-vps.p6.title')}</h3>
         <p>{t('projects.my-vps.p6.content')}</p>
-      </FadeInOnScroll>
+      </div>
 
       {/* Technologies */}
-      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+      <div className="mb-6 space-y-6 text-left sm:mb-12">
         <h2 className="section-title">{t('projects.titles.technologies')}</h2>
         <div className="flex flex-wrap gap-2">
           <TechnoBadge name="Ubuntu" src="/icons/ubuntu.svg" alt="Ubuntu" />
@@ -68,10 +68,10 @@ const MyVPS = () => {
           <TechnoBadge name="Cert Manager" src="/icons/cert-manager.svg" alt="Cert Manager" />
           <TechnoBadge name="Letsencrypt" src="/icons/letsencrypt.svg" alt="Letsencrypt" />
         </div>
-      </FadeInOnScroll>
+      </div>
 
       {/* Concepts */}
-      <FadeInOnScroll className="mb-6 space-y-6 text-left sm:mb-12">
+      <div className="mb-6 space-y-6 text-left sm:mb-12">
         <div>
           <h2 className="section-title">{t('projects.titles.keyConcepts')}</h2>
           <div className="flex flex-wrap gap-2">
@@ -83,10 +83,10 @@ const MyVPS = () => {
             <ConceptBadge conceptKey="concepts.dnsConfiguration" />
           </div>
         </div>
-      </FadeInOnScroll>
+      </div>
       {/* Links */}
 
-      <FadeInOnScroll className="space-y-6 text-left">
+      <div className="space-y-6 text-left">
         <h2 className="section-title">{t('projects.titles.links')}</h2>
         <div className="mt-6 flex flex-col gap-2">
           <a
@@ -101,8 +101,8 @@ const MyVPS = () => {
             {t('projects.text.site')}
           </a>
         </div>
-      </FadeInOnScroll>
-    </section>
+      </div>
+    </AnimatedSection>
   );
 };
 

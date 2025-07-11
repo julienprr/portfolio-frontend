@@ -1,7 +1,8 @@
 {
   "hero": {
     "title": "Bonjour, je suis ",
-    "subtitle": "Bienvenu sur mon Portfolio",
+    "subtitle": "Développeur web",
+    "p1": "J’aime expérimenter de nouvelles technologies et créer des applications centrées sur l’utilisateur avec des architectures propres et évolutives.",
     "contact": "Me contacter"
   },
   "footer": {
@@ -17,7 +18,7 @@
         "date": "Septembre 2025",
         "title": "Mastère Spécialisé Architecte Digital d’Entreprise",
         "location": "Télécom Paris",
-        "description": "Actuellement en cours d’un Mastère Spécialisé axé sur l’architecture des systèmes d’information, la transformation digitale, l’urbanisation des SI et l’innovation technologique."
+        "description": "J'intègre un Mastère Spécialisé axé sur l’architecture des systèmes d’information, la transformation digitale, l’urbanisation des SI et l’innovation technologique."
       },
       {
         "date": "Août 2024",

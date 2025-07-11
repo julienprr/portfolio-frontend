@@ -63,7 +63,7 @@
   --font-heading: 'Clash Display', sans-serif;
   --font-body: 'Inter', sans-serif;
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(97.614% 0.00011 271.152);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -164,11 +164,17 @@
 }
 
 @layer components {
+  .hero-title {
+    @apply mt-20 pb-2 text-3xl font-bold sm:mt-20 sm:pb-4 sm:text-5xl xl:text-6xl;
+  }
+  .hero-subtitle {
+    @apply pb-6 text-xl font-bold text-accent sm:pb-12 sm:text-4xl;
+  }
   .section-title {
     @apply mb-2 text-3xl text-primary sm:mb-6 sm:text-5xl;
   }
   .section-subtitle {
-    @apply mb-8 sm:mb-12 text-lg sm:text-xl text-muted-foreground
+    @apply mb-8 text-lg text-muted-foreground sm:mb-12 sm:text-xl;
   }
   .paragraph-title {
     @apply mb-1 text-lg font-bold sm:mb-2 sm:text-2xl;

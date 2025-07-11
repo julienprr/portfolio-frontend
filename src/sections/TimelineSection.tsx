@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import AnimatedSection from '@/components/AnimatedSection.tsx';
 
-import BackgroundTimeLine from './BackgroundTimeline.tsx';
+import BackgroundTimeLine from '../components/BackgroundTimeline.tsx';
 
 export type BackgroundItem = {
   date: string;
