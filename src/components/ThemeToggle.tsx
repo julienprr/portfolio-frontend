@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { Moon, Sun } from 'lucide-react';
 
@@ -18,17 +18,6 @@ const ThemeToggle = () => {
       setIsDarkMode(true);
     }
   };
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-      setIsDarkMode(true);
-    } else {
-      document.documentElement.classList.remove('dark');
-      setIsDarkMode(false);
-    }
-  }, []);
 
   return (
     <button onClick={toggleTheme} className={cn('rounded-full transition-colors duration-300', 'focus-outline-hidden')}>
