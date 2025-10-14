@@ -1,14 +1,17 @@
 {
   "hero": {
     "title": "Hello, I'm ",
-    "subtitle": "Web Developer",
-    "p1": "I love experimenting with new technologies and building user-focused applications with clean and scalable architectures.",
+    "subtitle": "Full Stack Developer",
+    "p1": "I'm currently studying for a Specialized Master's Degree in Digital Enterprise Architecture at Télécom Paris. I have two years of experience building web applications, and I'm also passionate about infrastructure, cloud, DevOps, and automation. I even run my own VPS to learn by doing!",
     "contact": "Contact me"
   },
   "footer": {
     "developpedBy": "Website developed by ",
     "contact": "Contact me at ",
     "visit": "or visit my "
+  },
+  "socials": {
+    "my": "Mon "
   },
   "background": {
     "title": "Background",

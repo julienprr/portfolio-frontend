@@ -1,14 +1,17 @@
 {
   "hero": {
     "title": "Bonjour, je suis ",
-    "subtitle": "Développeur web",
-    "p1": "J’aime expérimenter de nouvelles technologies et créer des applications centrées sur l’utilisateur avec des architectures propres et évolutives.",
+    "subtitle": "Développeur Full Stack",
+    "p1": "Je suis actuellement étudiant au Mastère Spécialisé Architecte Digital d’Entreprise à Télécom Paris. J’ai deux ans d’expérience dans le développement d’applications web, et je m’intéresse aussi de près à l’infrastructure, au cloud, au DevOps et à l’automatisation — je gère d’ailleurs mon propre VPS pour apprendre en pratiquant !",
     "contact": "Me contacter"
   },
   "footer": {
     "developpedBy": "Site développé par ",
     "contact": "Contactez moi:  ",
     "visit": "ou visitez mon "
+  },
+  "socials": {
+    "my": "My "
   },
   "background": {
     "title": "Parcours",
